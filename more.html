@@ -167,6 +167,17 @@
     document.getElementById('flap').style.transform = 'rotateX(180deg)';
     document.getElementById('flap').style.transformOrigin = 'top';
   }
+  <script>
+  function popEnvelope() {
+    const envelope = document.querySelector('.envelope');
+    envelope.classList.add('pop');
+
+    envelope.addEventListener('animationend', function() {
+      envelope.classList.remove('pop');
+    }, { once: true });
+  }
+</script>
+
 </script>
 </body>
 </html>
