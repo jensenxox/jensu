@@ -133,11 +133,9 @@ select {
 }
 .image-row {
   display: flex;
-  justify-content: flex-end; /* Align images to the right */
-  margin: 40px 20px;
+  justify-content: center;
+  margin: 20px 0;
   gap: 20px;
-  position: relative;
-  z-index: 2;
 }
 
 .image-box {
@@ -155,3 +153,4 @@ select {
   font-size: 14px;
   color: #555;
 }
+
