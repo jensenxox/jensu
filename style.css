@@ -157,3 +157,23 @@ select {
   z-index: 3; /* On top of the envelope */
 }
 
+.sticker-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sticker {
+  width: 80px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.sticker:hover {
+  transform: scale(1.1);
+}
+
+
