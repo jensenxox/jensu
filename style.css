@@ -153,4 +153,7 @@ select {
   font-size: 14px;
   color: #555;
 }
+.message-bubble {
+  z-index: 3; /* On top of the envelope */
+}
 
