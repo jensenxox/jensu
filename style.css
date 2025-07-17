@@ -80,39 +80,48 @@ select {
 .bubble:nth-child(2) { left: 50%; top: 120px; }
 .bubble:nth-child(3) { left: 70%; top: 60px; }
 }
+
 .envelope {
   position: relative;
   width: 320px;
   height: 200px;
-  background: #fff;
+  margin: 50px auto;
+  background: #ffeef8;
   border: 2px solid #ffb6c1;
-  border-radius: 8px;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.3);
   overflow: hidden;
-  transition: 0.5s ease;
-  cursor: pointer;
 }
 
-.envelope .flap {
+.flap {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 60px;
-  background: #ffb6c1;
-  clip-path: polygon(0 0, 50% 100%, 100% 0);
-  transition: transform 0.6s ease;
-  transform-origin: top center;
+  width: 0;
+  height: 0;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-bottom: 100px solid #ffb6c1;
+  z-index: 2;
 }
 
-.envelope .letter {
-  padding: 70px 20px 20px 20px;
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
-  opacity: 0;
-  transition: opacity 0.4s ease;
+.letter {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 14px;
+  color: #d63384;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+  overflow-y: auto;
+  z-index: 1;
 }
+
 
 /* When envelope is opened */
 .envelope.open .flap {
