@@ -190,6 +190,20 @@ select {
   50% { transform: scale(1.1); }
   100% { transform: scale(1); }
 }
+@keyframes popUp {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.envelope {
+  animation: popUp 0.6s ease-out;
+}
 
 .envelope.pop {
   animation: pop 0.4s ease;
