@@ -209,8 +209,7 @@ select {
   animation: pop 0.4s ease;
 }
 .side-img {
-  width: 100%;
-  max-width: 150px; /* Adjust to your preferred size */
+  width: 150px;
   height: auto;
   display: block;
   margin: 10px auto;
