@@ -194,3 +194,10 @@ select {
 .envelope.pop {
   animation: pop 0.4s ease;
 }
+.side-img {
+  width: 100%;
+  max-width: 150px; /* Adjust to your preferred size */
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
