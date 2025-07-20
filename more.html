@@ -156,20 +156,21 @@
 
 <script>
   function openEnvelope() {
-    document.getElementById('flap').style.transform = 'rotateX(180deg)';
-    document.getElementById('flap').style.transformOrigin = 'top';
-  }
-  <script>
-  function popEnvelope() {
+    const flap = document.getElementById('flap');
     const envelope = document.querySelector('.envelope');
+
+    // Open the flap
+    flap.style.transform = 'rotateX(180deg)';
+
+    // Play the pop animation
     envelope.classList.add('pop');
 
+    // Remove the animation class after it finishes so it can be triggered again if needed
     envelope.addEventListener('animationend', function() {
       envelope.classList.remove('pop');
     }, { once: true });
   }
 </script>
 
-</script>
 </body>
 </html>
