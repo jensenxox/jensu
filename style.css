@@ -236,3 +236,6 @@ select {
     max-width: 180px;
   }
 }
+.sticker {
+  object-fit: contain;
+}
