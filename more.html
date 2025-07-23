@@ -171,19 +171,20 @@
       envelope.classList.remove('pop');
     }, { once: true });
   }
-  /* Make images responsive */
 .sticker, .side-img {
   width: 100%;
-  max-width: 250px;  /* You can adjust this size */
+  max-width: 250px;
   height: auto;
 }
 
-/* Center the sticker */
 .sticker-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  position: absolute;
+  top: 80px;        /* Adjust this as needed */
+  right: 20px;      /* Pushes it to the right */
+  max-width: 120px; /* Controls image size */
+  z-index: 3;
 }
+
 
 /* Fix the image layout */
 .image-row {
@@ -200,7 +201,7 @@
 /* Optional: Better mobile handling */
 @media (max-width: 500px) {
   .sticker, .side-img {
-    max-width: 180px;  /* Smaller size for small screens */
+    max-width: 80px;  /* Smaller size for small screens */
   }
 }
 
