@@ -158,18 +158,22 @@ select {
 }
 
 .sticker-container {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .sticker {
-  width: 400px;
+  max-width: 250px;
+  width: 100%;
   height: auto;
-  transition: transform 0.3s ease;
+}
+
+/* Mobile fix */
+@media (max-width: 500px) {
+  .sticker {
+    max-width: 180px;
+  }
 }
 
 .sticker:hover {
