@@ -248,12 +248,14 @@ select {
 }
 .sticker-container {
   position: absolute;
-  top: 100px;
-  right: 10px;
-  max-width: 100px;
+  top: 80px;         /* Adjust as needed */
+  right: 20px;       /* Pushes it to the right */
+  max-width: 120px;  /* Controls size */
+  z-index: 3;
 }
 
 .sticker-container img.sticker {
   width: 100%;
   height: auto;
 }
+
