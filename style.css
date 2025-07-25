@@ -266,4 +266,17 @@ select {
 .envelope.open .flap {
   transform: rotateX(180deg);
 }
+.envelope {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.envelope .flap {
+  transition: transform 0.5s ease;
+  transform-origin: top;
+}
+
+.envelope.open .flap {
+  transform: rotateX(180deg);
+}
 
