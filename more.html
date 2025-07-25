@@ -160,17 +160,20 @@
   const envelope = document.querySelector('.envelope');
   envelope.classList.toggle('open');
 }
-       // Open the flap
-    flap.style.transform = 'rotateX(180deg)';
+  .envelope {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
 
-    // Play the pop animation
-    envelope.classList.add('pop');
+.envelope .flap {
+  transition: transform 0.5s ease;
+  transform-origin: top;
+}
 
-    // Remove the animation class after it finishes so it can be triggered again if needed
-    envelope.addEventListener('animationend', function() {
-      envelope.classList.remove('pop');
-    }, { once: true });
-  }
+.envelope.open .flap {
+  transform: rotateX(180deg);
+}
+
 .sticker, .side-img {
   width: 100%;
   max-width: 250px;
