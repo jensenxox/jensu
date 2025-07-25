@@ -258,4 +258,12 @@ select {
   width: 100%;
   height: auto;
 }
+.envelope .flap {
+  transform-origin: top;
+  transition: transform 0.5s ease;
+}
+
+.envelope.open .flap {
+  transform: rotateX(180deg);
+}
 
