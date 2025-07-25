@@ -157,10 +157,10 @@
 
 <script>
   function openEnvelope() {
-    const flap = document.getElementById('flap');
-    const envelope = document.querySelector('.envelope');
-
-    // Open the flap
+  const envelope = document.querySelector('.envelope');
+  envelope.classList.toggle('open');
+}
+       // Open the flap
     flap.style.transform = 'rotateX(180deg)';
 
     // Play the pop animation
